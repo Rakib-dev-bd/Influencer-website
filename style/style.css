@@ -102,10 +102,13 @@
 .popular {
   width: 90%;
   margin: 0 auto;
+
+  position: relative;
 }
 
 .secondary--heading {
-  font-size: var(--font-semi-md);
+  font-size: var(--font-md);
+  font-weight: bold;
 }
 
 .cards {
@@ -167,4 +170,50 @@
 
 .card--img {
   width: 100%;
+}
+
+.seemore {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+
+  border: none;
+  padding: 5px 20px;
+  color: #ffffff;
+  background-color: rgb(82, 82, 82);
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 9px;
+}
+
+/* Feature section */
+
+.feature {
+  align-items: center;
+  justify-content: space-around;
+}
+
+.feature--img-box {
+  width: calc(100% - 60%);
+}
+
+.feature--img {
+  width: 100%;
+}
+
+.feature--content-box {
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  width: 40%;
+}
+
+.feature--heading {
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.feature--description {
+  font-size: var(--font-sm);
 }
