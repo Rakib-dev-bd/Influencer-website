@@ -1,0 +1,55 @@
+:root {
+  /* font-size var */
+
+  --font-semi-sm: 14px;
+  --font-sm: 16px;
+  --font-semi-md: 24px;
+  --font-md: 28px;
+
+  /* Color var */
+
+  --primary-color: rgb(58, 58, 58);
+  --card-primary: rgb(24, 25, 31);
+  --card-secondary: rgba(0, 0, 0, 0.87);
+  --card-tertiary: rgb(120, 120, 133);
+
+  /* Background color */
+
+  --bg-primary: rgb(224, 44, 109);
+}
+
+/* Helper - class */
+
+.flex {
+  display: flex;
+}
+.grid {
+  display: grid;
+}
+
+.grid--col-2 {
+  grid-template-columns: 1fr 1fr;
+}
+.grid--col-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.center--text {
+  text-align: center;
+}
+
+.description {
+  font-size: var(--font-sm);
+  color: var(--primary-color);
+}
+
+.btn {
+  border: none;
+  padding: 10px 20px;
+  font-size: var(--font-semi-sm);
+  color: #fff;
+  background-color: var(--bg-primary);
+  border-radius: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
